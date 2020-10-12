@@ -1,2 +1,0 @@
-Build: 1.0 Sun Jun 28 18:22:29 GMT 2020
-	Initial Update to 1.16.1
