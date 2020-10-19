@@ -157,10 +157,14 @@ publishing {
 static def getLatestGitHash() {
     def processCurrentCommit = "git rev-parse --short HEAD".execute()
     def version = processCurrentCommit.text.toString().trim()
-    if (System.getenv("CI")) {
+    if (System.getenv("VERSION")) {
+        println "I'm running on CI server in release"
+        def processMessage = "git log --oneline -1".execute()
+        version = processMessage.text.toString().trim().split(" ")[0]
+    } else if (System.getenv("CI")) {
         println "I'm running on CI server, so we need parent sha1"
         // on CI there is a speculative merge commit, we have to ignore it because it's just temporary
-        def processMessage = " git log -1 --pretty=%B".execute()
+        def processMessage = "git log -1 --pretty=%B".execute()
         version = processMessage.text.toString().trim().split(" ")[1].take(8)
     }
     return version
