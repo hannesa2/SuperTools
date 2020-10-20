@@ -15,7 +15,7 @@ apply plugin: 'maven-publish'
 
 ext {
     minecraftVersion = "1.16.1"
-    superToolsVersion = "2"
+    superToolsVersion = "3"
 }
 
 version = minecraftVersion + "-" + superToolsVersion + "-" + getLatestGitHash() + isDirty()
