@@ -19,7 +19,7 @@ public class BasisArmorMaterial {
     public final static IArmorMaterial emerald = new ArmorMaterial(Constants.modid + ":emerald",33, new int[]{4, 6, 9, 4}, 35, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F,() -> Ingredient.fromItems(Items.EMERALD));
     public final static IArmorMaterial obsidian = new ArmorMaterial(Constants.modid + ":obsidian", 33, new int[]{4, 7, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F,() -> Ingredient.fromItems(Blocks.OBSIDIAN));
     public final static IArmorMaterial quartz = new ArmorMaterial(Constants.modid + ":quartz", 33, new int[]{2, 5, 6, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F,() -> Ingredient.fromItems(Items.QUARTZ));
-    public final static IArmorMaterial lapis = new ArmorMaterial(Constants.modid + ":lapis",27, new int[]{3, 5, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F,() -> Ingredient.fromItems(Items.LAPIS_LAZULI));
+    public final static IArmorMaterial lapis = new ArmorMaterial(Constants.modid + ":lapis",27, new int[]super sword.ja{3, 5, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F,() -> Ingredient.fromItems(Items.LAPIS_LAZULI));
 
     private static class ArmorMaterial implements IArmorMaterial{
 
